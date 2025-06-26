@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>ESPE Button Demo</title>
+  <script type="module" src="./components/espe-button.js"></script>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px">
+  <h1>Botón ESPE con estados personalizados</h1>
+
+  <espe-button label="Guardar"></espe-button>
+
+  <script>
+    document.querySelector('espe-button').addEventListener('task-sent', e => {
+      alert("Evento 'task-sent' recibido: " + e.detail);
+    });
+  </script>
+</body>
+</html>
