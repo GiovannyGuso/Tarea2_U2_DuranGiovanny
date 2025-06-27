@@ -19,7 +19,7 @@ export class EspeButton extends LitElement {
     }
 
     .loading::after {
-      content: ' ⏳';
+      content: ' ...';
     }
   `;
 
